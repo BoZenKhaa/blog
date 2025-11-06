@@ -15,8 +15,9 @@ Add to "Open with" menu in Windows: place a shortcut to Inkscape in `C:\ProgramD
 5. Save
 
 
-## Split PDF with `pdfseparate`
+## Split PDF with `pdfseparate` and `qpdf`
 
+### Splitting into pages
 From https://xgueret.github.io/en/posts/pdfseparate/
 
 Install in WSL: 
@@ -29,6 +30,13 @@ Simple usage:
 pdfseparate input.pdf output-%d.pdf
 ```
 `output-%d.pdf` specifies the naming pattern for the generated files, where %d will be replaced by the page number.
+
+### Extracting multi-page parts
+To extract part of a document, use
+
+```Bash
+qpdf "$INPUT_FILE" --pages . $START_PAGE-$END_PAGE -- "$OUTPUT_FILE"
+```
 
 Split into four-page parts, use `qpdf` and this script:
 ```Bash
