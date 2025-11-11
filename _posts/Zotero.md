@@ -1,4 +1,11 @@
-# Zotero
+# Zotero 7
+
+Extensions:
+ - https://github.com/MuiseDestiny/zotero-attanger
+   - allows easily adding newly downloaded pdfs to library items
+   
+
+# Zotero 6
 
 ## Linking papers with "Related" tab
 You can create connections between papers with the "Related" tab. 
@@ -8,3 +15,4 @@ Fastest way to do this is with the "Zutilo" plugin:
 2. Right click and select "Zutilo" -> "Relate selected items"
 
 The "relation" (~) is commutative (A~B <=> B~A), but it is not transitive (A~B and B~C =/=> A~C). 
+
