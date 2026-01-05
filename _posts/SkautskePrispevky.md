@@ -29,3 +29,17 @@ OR use sheets function Data -> Data cleanup -> Remove Duplicates
 4. Vlookup value to pay via e.g. `=VLOOKUP(C:C;UpominkyPodzim2024!A:L; 9;false)`
 5. If the value is not a number, use "Find and replace" to remove the "Kč" and spaces.
 6. Verify all the values are looked up correctly. For example, count whether the number of values matches between the two sheets.
+
+## Instalace
+
+On Windows
+1. Install `uv` in powershell
+2. Install `git` in powershell
+3. Restart powershell
+4. Clone repo:
+5. cd into downloaded directory
+6. `uv sync` - stahne dependence
+7. `Set-ExecutionPolicy Unrestricted -Scope Process`
+8. `./.venv/Scripts/Activate.ps1`
+9. `jupyter notebook` - spustí jupyter notebook
+10. Otevři `prispevky.ipynb`
